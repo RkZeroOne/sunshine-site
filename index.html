@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Minha Sunshine 🌻</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+      color: #f5f5f5;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center/cover;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .music-player {
+      margin: 20px auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #ffdd57;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 221, 87, 0.6);
+    }
+
+    .photo-container {
+      margin: 20px 0;
+    }
+
+    .hidden-photo {
+      display: none;
+      margin-top: 20px;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 221, 87, 0.6);
+    }
+
+    .reveal-btn {
+      background: #ffdd57;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .reveal-btn:hover {
+      background: #ffc107;
+      transform: scale(1.05);
+    }
+
+    footer {
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Para Minha Sunshine 🌻</h1>
+    <p>Um pedacinho do que sinto por você...</p>
+    <div class="music-player">
+      <h3>🎶 Escolha uma música para acompanhar</h3>
+      <audio controls>
+        <source src="Charlie Brown Jr - Lutar Pelo Que É Meu.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+      <br><br>
+      <audio controls>
+        <source src="ANAVITÓRIA - Porque Eu Te Amo.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+    </div>
+  </header>
+
+  <section>
+    <h2>🌹 Um Vídeo Para Você</h2>
+    <iframe src="https://www.youtube.com/embed/sQur8Am_G3M" 
+            title="Vídeo para Sunshine" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </section>
+
+  <section>
+    <h2>✨ Minhas Palavras</h2>
+    <p>
+      Sunshine, você é a parte mais bonita da minha vida. É como se cada dia tivesse mais sentido só porque você existe. Quando penso em tudo o que já vivi, percebo que nada se compara ao que sinto ao seu lado. Você é luz, é calma e, ao mesmo tempo, é força. É o sorriso que muda meu dia e a certeza que quero carregar para sempre comigo.
+      Não preciso de muito quando tenho você. Não preciso competir com nada, porque o que temos é único e verdadeiro. Você é meu lar, meu refúgio e meu lugar favorito no mundo. É em você que encontro paz, é em você que encontro amor.
+      Quero que saiba que sempre estarei aqui, não importa o que aconteça. Você é meu presente mais precioso, minha Sunshine, e a cada dia que passa eu só descubro novas razões para te amar.
+    </p>
+  </section>
+
+  <section>
+    <h2>📸 Nossas Fotos</h2>
+    <div class="photo-container">
+      <button class="reveal-btn" onclick="document.getElementById('foto1').style.display='block'">Revelar Foto 1</button>
+      <img id="foto1" class="hidden-photo" src="img3.jpg" alt="Foto 1">
+    </div>
+    <div class="photo-container">
+      <button class="reveal-btn" onclick="document.getElementById('foto2').style.display='block'">Revelar Foto 2</button>
+      <img id="foto2" class="hidden-photo" src="B14B4283-D141-44C3-988C-70367FBB83D2.jpg" alt="Foto 2">
+    </div>
+  </section>
+
+  <footer>
+    Feito com ❤️ por Rikelme para sua Sunshine ✨
+  </footer>
+</body>
+</html>
